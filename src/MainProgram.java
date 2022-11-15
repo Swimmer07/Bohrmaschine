@@ -4,6 +4,14 @@ public class MainProgram {
     DrillingMachine e2 = new DrillingMachine();
 
     e1.showInfos();
-    e2.showInfos();
+    e1.becomeBroken();
+    e1.showInfos();
+    e1.repair();
+    e1.showInfos();
+    e1.aging();
+    e1.showInfos();
+    e1.reactOnHighDemand();
+    e1.showInfos();
+
     }
 }
