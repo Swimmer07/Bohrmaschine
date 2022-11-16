@@ -54,7 +54,39 @@ public class DrillingMachine {
             if(watt > 100){
                 this.price = price*1.05;
             }
+    }
 
+    public double getPrice(){
+        return price;
+    }
+
+    public boolean isInexpensive(){
+        if(watt > 500 && price < 80){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public double getPricePerWatt(){
+        return price/watt;
+    }
+
+    public boolean increasePriceByPercentage(double percentage){
+        if(percentage > 0.0){
+            price = price + price*percentage;
+        }
+        if(price > 100){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    public boolean repair2(){
+        if(broken == true){
+
+        }
     }
 }
 
