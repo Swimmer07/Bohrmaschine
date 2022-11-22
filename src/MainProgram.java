@@ -12,7 +12,10 @@ public class MainProgram {
     e1.showInfos();
     e1.reactOnHighDemand();
     e1.showInfos();
-
+    e1.increasePrice(2000);
+    e1.showInfos();
+    System.out.println("Ein Watt kostet: " + e1.getPricePerWatt());
+    System.out.println(e1.getInfo());
 
     }
 }
